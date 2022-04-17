@@ -1,0 +1,13 @@
+name = "TextBox"
+uuid = "699dc53c-77f3-421a-b787-0eea097c79c4"
+authors = ["FedeClaudi <federicoclaudi@protonmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
