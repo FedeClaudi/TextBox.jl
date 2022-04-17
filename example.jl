@@ -23,31 +23,43 @@ lorems = [
 ]
 
 
-function keep_3_lines(txt)
-    return split(txt, "\n")[1:3]
+function keep_10_lines(txt)
+    return split(txt, "\n")[1:10]
 end
 
 
 width = 52
 
 
-for lorem in lorems
-    println("_"^width)
-    println(reshape_text(lorem, width))
-    println("_"^width)
-end
+# for lorem in lorems
+#     println("_"^width)
+#     println(reshape_text(lorem, width; at_spaces=false))
+#     println("_"^width)
+# end
 
 
 
 reshaped= []
 for lorem in lorems
-    push!(reshaped, keep_3_lines(reshape_text(lorem, width)))
+    push!(reshaped, keep_10_lines(reshape_text(lorem^5, width)))
 end
 
 print("\n"^5)
 N = length(reshaped)
-println(("_"^width*"    ")^N)
-for i in 1:3
+
+alphabets = ["latin", "thai", "korean", "chinese", "arabic", "hebrew"]
+println(
+    "\e[34m\e[1m" * *(
+        map(
+            alpha -> rpad(alpha, width+4), 
+            alphabets
+        )...
+    )[1:end-5] * "\e[0m"
+)
+
+
+println("\e[2m" * ("─"^width*"    ")^N * "\e[0m")
+for i in 1:10
     println(*(map(n -> rpad(reshaped[n][i], width+4), 1:N)...))
 end
 print("\n"^5)

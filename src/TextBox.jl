@@ -5,7 +5,7 @@ export reshape_text
 """
     loop_last(v)
 
-Yield an iterable with info about when the last item is reached
+Yield an iterable with info about when the last item is
 """
 function loop_last(v)
     is_last =  1:length(v) .== length(v)
