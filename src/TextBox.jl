@@ -2,6 +2,11 @@ module TextBox
 
 export reshape_text
 
+"""
+    loop_last(v)
+
+Yield an iterable with info about when the last item is reached
+"""
 function loop_last(v)
     is_last =  1:length(v) .== length(v)
       return zip(is_last, v)
