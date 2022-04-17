@@ -1,6 +1,6 @@
 # TextBox
 
-[![Build Status](https://github.com/FedeClaudi/TextBox.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/FedeClaudi/TextBox.jl/actions/workflows/CI.yml?query=branch%3Amain)
+[![CI](https://github.com/FedeClaudi/TextBox.jl/actions/workflows/CI.yml/badge.svg)](https://github.com/FedeClaudi/TextBox.jl/actions/workflows/CI.yml)
 [![Coverage](https://codecov.io/gh/FedeClaudi/TextBox.jl/branch/main/graph/badge.svg)](https://codecov.io/gh/FedeClaudi/TextBox.jl)
 
 
